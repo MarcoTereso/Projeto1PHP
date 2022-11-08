@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+	<header></header>
+	<main style="width: 60%; margin-left: 20%;">
+		<h1>Registo de Utilizador</h1>
+		<form method="POST" action="../php/validaRegistoUtilizador.php">
+			<div class="row">
+  				<div class="col-lg-6 col-md-6 col-sm-12">
+  					<label for="nome">Nome</label>
+    				<input type="text" class="form-control" placeholder="Insira o seu nome" aria-label="Primeiro Nome" id="nome" name="nome">
+  				</div>
+  				<div class="col-lg-6 col-md-6 col-sm-12">
+  					<label for="apelido">Apelido</label>
+    				<input type="text" class="form-control" placeholder="Insira o seu apelido" aria-label="Apelido" id="apelido" name="apelido">
+  				</div>
+			</div><br>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+  					<label for="email">Email</label>
+    				<input type="email" class="form-control" placeholder="Preencha o seu email" aria-label="email" id="email" name="email">
+  				</div>
+  				<div class="col-lg-6 col-md-6 col-sm-12">
+  					<label for="password">Password</label>
+    				<input type="password" class="form-control" placeholder="Insira a password" aria-label="Password" id="password" name="pass">
+  				</div>
+			</div><br>
+			<div class="row">
+				<div class="col">
+					<label for="moradaUser">Morada:</label>
+			    <input type="text" class="form-control" placeholder="Rua de cima, nº 805" id="moradaUser" name="morada">
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="col">
+					<label for="morada2User">Morada 2:</label>
+			    <input type="text" class="form-control" placeholder="Apartamento, hotel, casa, etc." id="morada2User" name="morada2">
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<label for="cidadeUser">Cidade:</label>
+			    <input type="text" class="form-control" placeholder="Insira o concelho" id="cidadeUser" name="concelho">
+				</div>
+				<div class="col-lg-4 col-md-8 col-sm-12">
+					<label for="distritoUser">Distrito:</label>
+					<select id="distritoUser" class="form-select" name="distrito">
+						<option>Escolher</option>
+						<option value ="Aveiro">Aveiro</option>
+						<option value ="Beja">Beja</option>
+						<option value ="Braga">Braga</option>
+						<option value ="Bragança">Bragança</option>
+						<option value ="Castelo Branco">Castelo Branco</option>
+						<option value ="Coimbra">Coimbra</option>
+						<option value ="Évora">Évora</option>
+						<option value ="Faro">Faro</option>
+						<option value ="Guarda">Guarda</option>
+						<option value ="Leiria">Leiria</option>
+						<option value ="Lisboa">Lisboa</option>
+						<option value ="Portalegre">Portalegre</option>
+						<option value ="Porto">Porto</option>
+						<option value ="Santarém">Santarém</option>
+						<option value ="Setúbal">Setúbal</option>
+						<option value ="Viana do Castelo">Viana do Castelo</option>
+						<option value ="Vila Real">Vila Real</option>
+						<option value ="Viseu">Viseu</option>
+					</select>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-12">
+					<label for="codPos">Código Postal:</label>
+			    <input type="text" class="form-control" placeholder="xxxx-yyy" id="codPos" name="codPos">
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="col-4">
+					<label for="diUser">Data Inicio:</label>
+			    <input type="date" class="form-control" placeholder="12/01/2021" id="diUser" name="diUser">
+				</div>
+				<div class="col-4">
+					<label for="dfUser">Data Final:</label>
+			    <input type="date" class="form-control" placeholder="06/01/2021" id="dfUser" name="dfUser">
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="col">
+
+			    <input type="checkbox" value="ok" name="check">&nbsp;Clique em mim
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="col">
+
+			    <input type="submit" value="Inserir Registo" class="btn btn-primary">
+				</div>
+			</div><br>
+		</form>
+
+	</main>
+	<footer>	</footer>
+
+</body>
+</html>
